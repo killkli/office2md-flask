@@ -1,0 +1,12 @@
+version: '3'
+services:
+  web:
+    image: office2markdown
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./uploads:/app/uploads
+    environment:
+      - SECRET_KEY=your_production_secret_key  # Replace with a strong key
+    restart: unless-stopped
