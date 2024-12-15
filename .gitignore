@@ -1,0 +1,20 @@
+# Byte-compiled Python files
+__pycache__/
+*.py[cod]
+
+# Log files
+*.log
+
+# Database files
+*.db
+*.sqlite
+
+# Flask cache files
+/flask_session/
+
+# virtual environment
+venv/
+
+# Other
+*.DS_Store
+.env
